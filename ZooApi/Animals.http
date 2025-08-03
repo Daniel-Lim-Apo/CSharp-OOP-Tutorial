@@ -1,0 +1,23 @@
+@ZooApi_HostAddress = http://localhost:5018
+
+### Get all animals
+GET {{ZooApi_HostAddress}}/api/animals
+Accept: application/json
+
+###
+
+### Get a single animal by name
+GET {{ZooApi_HostAddress}}/api/animals/Rex
+Accept: application/json
+
+###
+
+GET {{ZooApi_HostAddress}}/api/animals/Whiskers
+Accept: application/json
+
+###
+
+### Try an animal that does not exist
+GET {{ZooApi_HostAddress}}/api/animals/Teddy
+Accept: application/json
+###
